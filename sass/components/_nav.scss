@@ -1,12 +1,12 @@
 .site-nav .link {
-  color: $title-text-color;
+  // color: $title-text-color;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -16,14 +16,14 @@
 }
 
 .site-nav__current {
-  color: $accent-color;
+  color: #404BBF;
   position: relative;
 
   &::after {
     content: '';
     width: 100%;
     height: 4px;
-    background-color: $accent-color;
+    background-color: #404BBF;
     display: block;
     border-radius: 2px;
     position: absolute;
@@ -37,12 +37,12 @@
     display: none;
   }
   display: flex;
-  margin-left: 88px;
+  margin-left: 120px;
     @media screen and (min-width: 1200px) {
-      margin-left: 93px;
+      margin-left: 76px;
     }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 }
