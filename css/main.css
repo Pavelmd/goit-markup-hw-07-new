@@ -210,10 +210,11 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
+  max-height: 796px;
   padding: 80px 40px 40px 40px;
+  -webkit-box-shadow: 0px 50em 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 50em 4px rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-          box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
   overflow-y: scroll;
   -webkit-transform: translateX(100%);
@@ -297,16 +298,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 48px;
-}
-.mobile-comand-social__icon {
-  margin-left: 56px;
-}
-.mobile-comand-social__icon:nth-child(1) {
-  margin-left: 0px;
 }
 
 .mobile-comand-social__link {
