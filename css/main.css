@@ -749,14 +749,10 @@ label {
   background-color: #188ce8;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -836,6 +832,11 @@ label {
   background-color: #f5f4fa;
   margin-bottom: 30px;
   height: 120px;
+}
+@media screen and (max-width: 1257px) {
+  .icon-features {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {

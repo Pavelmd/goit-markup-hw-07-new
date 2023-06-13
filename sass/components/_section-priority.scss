@@ -1,9 +1,9 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 96px;
+  // padding-bottom: 96px;
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -63,6 +63,9 @@
   background-color: #f5f4fa;
   margin-bottom: 30px;
   height: 120px;
+  @media screen and (max-width:1257px) {
+    display: none;
+  }
 }
 @media screen and (max-width:767px){
 .priority__item:not(:last-child) {
