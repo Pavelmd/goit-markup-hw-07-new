@@ -1,12 +1,11 @@
 .section {
-  // padding-top: 96px;
-  // padding-bottom: 96px;
-  @media screen and (min-width: 1200px) {
+  
+  @media screen and (min-width: 1158px) {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .section-priority {
     padding-bottom: 0px;
   }
@@ -15,43 +14,59 @@
 .section-priority__title {
   color: $title-text-color;
   font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   // for 468
   text-align: center;
-  font-size: 14px;
+  font-size: 36px;
   @media screen and (min-width: 768px) {
     text-align: start;
   }
+  @media screen and (min-width: 1158px) {
+    font-weight: 500;
+  
+  font-size: 20px;
+  line-height: 1.2;
+
+  }
 }
 .list .section-priority__title {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .priority {
   &__text {
+    font-weight: 500;
+    font-size:16px;
     color: $primary-text-color;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    @media screen and (min-width: 1158px) {
+      font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    
+  
+    }
   }
   &__item {
-    max-width: 450px;
+    max-width: 396px;
     @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 2);
-      width: 354px;
+      flex-basis: calc((100% - 24px) / 2);
+      width: 356px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1158px) {
       flex-basis: auto;
-      width: 270px;
+      width: 264px;
     }
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 24px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1158px) {
     flex-wrap: nowrap;
   }
 }
@@ -60,15 +75,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  height: 120px;
-  @media screen and (max-width:1257px) {
+  background-color: #F4F4FD;
+ 
+  width: 264px;
+  height: 112px;
+  @media screen and (max-width:1157px) {
     display: none;
   }
 }
-@media screen and (max-width:767px){
-.priority__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
+
