@@ -913,7 +913,7 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 72px;
 }
 @media screen and (min-width: 768px) {
   .comand-list {
@@ -923,9 +923,10 @@ label {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 24px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .comand-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -940,19 +941,6 @@ label {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-@media screen and (min-width: 768px) {
-  .comand-list__item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .comand-list__item {
-    width: calc((100% - 90px) * 4);
-  }
-}
-.comand-list__item:last-child {
-  margin-right: 0;
 }
 
 .job-title {
@@ -999,8 +987,8 @@ label {
 }
 
 .comand-social__link {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
