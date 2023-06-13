@@ -390,7 +390,7 @@ p {
   text-align: center;
   padding: 112px 0px;
   max-width: 1440px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("../img/img-adaptive/hero-mobile-1x.jpg");
@@ -480,7 +480,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -496,11 +496,11 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-height: 609px;
-  max-width: 450px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  max-height: 584px;
+  max-width: 392px;
+  background-color: #FCFCFC;
+  -webkit-box-shadow: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+          box-shadow: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -509,10 +509,10 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal {
-    min-height: 581px;
-    min-width: 528px;
+    min-height: 584px;
+    min-width: 408px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -521,11 +521,11 @@ p {
 }
 
 .icon-button {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   text-decoration: none;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,8 +537,8 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 24px;
+  right: 24px;
   cursor: pointer;
 }
 .icon-button__close {
@@ -551,26 +551,16 @@ p {
 }
 
 .form-modal {
-  padding: 40px;
+  padding: 72px 16px 24px 16px;
 }
 .form-modal__name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: #2E2F42;
-  margin-bottom: 12px;
-}
-
-.form-modal__name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #2E2F42;
-  margin-bottom: 12px;
+  margin-bottom: 34px;
 }
 
 .form-modal__field:focus-within > .form-modal__icon {
@@ -582,8 +572,8 @@ p {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: #434455;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
   margin-bottom: 4px;
   text-align: left;
 }
@@ -592,27 +582,22 @@ p {
   fill: #2E2F42;
   position: absolute;
   top: 32px;
-  left: 15px;
+  left: 19px;
   display: inline-block;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal__input {
-  min-width: 370px;
+  min-width: 360px;
   min-height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
   margin: 0;
-  padding-left: 42px;
+  padding-left: 34px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .form-modal__input {
-    min-width: 448px;
-  }
 }
 .form-modal__input:focus-within {
   border-color: #2196f3;
@@ -630,48 +615,53 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   position: relative;
 }
 
 .area {
   min-height: 120px;
-  padding: 12px 16px;
+  padding: 8px 16px;
 }
 .area::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  opacity: 0.5;
 }
 .area::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  opacity: 0.5;
 }
 .area:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  opacity: 0.5;
 }
 .area::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  opacity: 0.5;
 }
 .area::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  opacity: 0.5;
 }
 
 .label-license {
