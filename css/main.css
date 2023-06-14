@@ -1025,13 +1025,13 @@ label {
 .section__customers {
   color: #2E2F42;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.16;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .section__customers {
     font-size: 36px;
     margin-bottom: 50px;
@@ -1050,9 +1050,19 @@ label {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 72px;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .client-list {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
   .client-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1060,8 +1070,8 @@ label {
 }
 
 .client-list__link {
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
+  -ms-flex-preferred-size: calc((100% - 16px) / 2);
+      flex-basis: calc((100% - 16px) / 2);
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,8 +1082,8 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
-  height: 92px;
+  width: 190px;
+  height: 88px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1081,14 +1091,14 @@ label {
 }
 @media screen and (min-width: 768px) {
   .client-list__link {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
-    width: 226px;
+    -ms-flex-preferred-size: calc((100% - 48px) / 3);
+        flex-basis: calc((100% - 48px) / 3);
+    width: 168px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .client-list__link {
-    width: 170px;
+    width: 168px;
   }
 }
 .client-list__link:hover, .client-list__link:focus {
