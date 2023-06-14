@@ -1320,7 +1320,7 @@ label {
   display: inline-flex;
   padding: 8px 16px;
   border: 1px solid #FFFFFF;
-  opacity: 0.3;
+  opacity: 0.6;
   border-radius: 4px;
   font-family: inherit;
   font-size: 12px;
@@ -1328,6 +1328,7 @@ label {
   letter-spacing: 0.04em;
   background-color: #2E2F42;
   min-width: 310px;
+  color: #FFFFFF;
   outline: none;
 }
 @media screen and (min-width: 768px) {
