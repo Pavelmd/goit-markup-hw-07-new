@@ -20,11 +20,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:72px;
+  row-gap: 72px;
   @media screen and (min-width: 768px) {
      flex-direction: row;
      flex-wrap: wrap;
-      gap:24px;
+      row-gap:64px;
+      column-gap: 24px;
      
    
   }
@@ -34,16 +35,16 @@
  }
  
 
-  &__item {
+   &__item {
     
-    // @media screen and (min-width: 768px) {
+  //   @media screen and (min-width: 768px) {
        
        
-    //   flex-basis: calc((100% - 24px)/2);
-    // }
-    // @media screen and (min-width: 1158px) {
-    //   flex-basis: calc((100% - 72px)/4);
-    // }
+  //     flex-basis: calc((100% - 24px)/2);
+  //   }
+  //   @media screen and (min-width: 1158px) {
+  //     flex-basis: calc((100% - 72px)/4);
+  //   }
 
     
     border: 1px solid transparent;
@@ -52,34 +53,32 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
-//   &__item:last-child {
-//     margin-bottom: 0;
-//   }
+
 }
 
 
 .job-title {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 .comand-list__name {
   color: $title-text-color;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .comand-list__prof {
   color: $primary-text-color;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .comand-social {
   display: flex;
@@ -87,7 +86,7 @@
   justify-content: center;
 
   &__icon {
-    margin-left: 10px;
+    margin-left: 24px;
   }
 
   &__icon:nth-child(1) {
@@ -101,13 +100,14 @@
   text-decoration: none;
   display: flex;
   border-radius: 50%;
+  background-color: #4D5AE5;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color: $accent-color;
+    background-color: blueviolet;
     border-radius: 50%;
   }
 
@@ -118,6 +118,6 @@
 }
 
 .comand-social__svg {
-  fill: #afb1b8;
+  fill: #F4F4FD;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

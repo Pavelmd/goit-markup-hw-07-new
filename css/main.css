@@ -48,6 +48,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -913,7 +914,7 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 72px;
+  row-gap: 72px;
 }
 @media screen and (min-width: 768px) {
   .comand-list {
@@ -923,7 +924,10 @@ label {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 64px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -945,27 +949,27 @@ label {
 
 .job-title {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
 .comand-list__name {
   color: #2E2F42;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .comand-list__prof {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .comand-social {
@@ -980,7 +984,7 @@ label {
           justify-content: center;
 }
 .comand-social__icon {
-  margin-left: 10px;
+  margin-left: 24px;
 }
 .comand-social__icon:nth-child(1) {
   margin-left: 0px;
@@ -994,6 +998,7 @@ label {
   display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
+  background-color: #4D5AE5;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1004,7 +1009,7 @@ label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comand-social__link:hover, .comand-social__link:focus {
-  background-color: #4D5AE5;
+  background-color: blueviolet;
   border-radius: 50%;
 }
 .comand-social__link:hover .comand-social__svg, .comand-social__link:focus .comand-social__svg {
@@ -1012,7 +1017,7 @@ label {
 }
 
 .comand-social__svg {
-  fill: #afb1b8;
+  fill: #F4F4FD;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
