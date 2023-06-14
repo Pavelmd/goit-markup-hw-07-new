@@ -1161,6 +1161,11 @@ label {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    text-align: left;
+  }
+}
 .footer__logo:hover {
   color: #4D5AE5;
 }
@@ -1205,7 +1210,7 @@ label {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .social-network__join {
     text-align: left;
   }
@@ -1300,7 +1305,7 @@ label {
   margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .form__text {
     text-align: start;
   }

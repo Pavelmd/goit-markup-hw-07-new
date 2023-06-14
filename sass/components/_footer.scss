@@ -32,11 +32,10 @@
 
   // for 468
   text-align: center;
-  // @media screen and (min-width: 1158px) {
-  //   font-size: 26px;
-  //   line-height: 1.19;
-  //   display: inline-block;
-  // }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  
 
   &:hover {
     color: $accent-color;
@@ -83,7 +82,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
-  @media screen and (min-width: 1158px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
@@ -145,7 +144,7 @@
   margin-bottom: 20px;
   // for 468
   text-align: center;
-  @media screen and (min-width: 1158px) {
+  @media screen and (min-width: 768px) {
     text-align: start;
   }
 }
