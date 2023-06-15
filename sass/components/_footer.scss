@@ -2,16 +2,23 @@
   background-color: #2E2F42;
   padding-top: 96px;
   padding-bottom: 96px;
+  
 }
 .social-networks {
+  @media screen and (min-width: 768px) and (max-width: 1157px) {
+    width:552px;
+    align-items: flex-start;
+  }
+ 
   display: flex;
   flex-direction: column;
 
   align-items: center;
+  
 
   @media screen and (min-width: 1158px) {
     flex-direction: row;
-    justify-content: center;
+    
     align-items: baseline;
   }
 }
@@ -70,7 +77,7 @@
   }
   @media screen and (min-width: 1158px) {
     
-    margin-left: 24px;
+    margin-left: 120px;
   }
 }
 
@@ -112,6 +119,7 @@
   fill: #F4F4FD;
 }
 .form {
+  // margin-left: 0px;
   margin-top: 72px;
 
   @media screen and (min-width: 1158px) {
@@ -123,15 +131,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px){
+    
     flex-direction: row;
     align-items: flex-end;
+    justify-content: flex-start;
   }
 }
 .form__label {
   display: flex;
   flex-direction: column;
   margin: 0;
+  
 }
 .form__text {
   font-family: inherit;
