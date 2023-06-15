@@ -440,7 +440,6 @@ p {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
   margin-bottom: 72px;
 }
 @media screen and (min-width: 1200px) {
@@ -1388,6 +1387,7 @@ label {
           align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+  border: transparent;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
