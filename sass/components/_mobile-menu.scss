@@ -1,4 +1,8 @@
 // Mobile-menu
+.mobile-menu-container {
+  position: relative;
+  padding: 80px 40px 40px 40px;
+}
 .menu-toggle {
   display: flex;
   margin: 0;
@@ -32,8 +36,9 @@
   width:100%;
   height: 100%;
   max-height:796px;
-  padding: 80px 40px 40px 40px;
+ 
   box-shadow: 0px 50em 4px rgba(0, 0, 0, 0.35);
+  // box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
   // box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
@@ -42,6 +47,7 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
+
 
 .menu-container.is-open {
   transform: translateX(0);
