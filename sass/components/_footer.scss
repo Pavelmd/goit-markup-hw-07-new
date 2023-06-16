@@ -111,7 +111,7 @@
 
   &:hover,
   &:focus {
-    background-color: blueviolet;
+    background-color: #31D0AA;
   }
 }
 
@@ -212,6 +212,9 @@
     margin-top: 0px;
     margin-left: 24px;
   }
+}
+.form__button:hover, .form__button:focus {
+  background-color: #404BBF;
 }
 .form__icon {
   fill: currentColor;

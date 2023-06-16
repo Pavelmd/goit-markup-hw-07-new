@@ -54,14 +54,17 @@
   cursor: pointer;
 
   &__close {
-    fill: #000000;
+    fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover &__close,
   &:focus &__close {
-    fill: $accent-color;
+    fill: #FFFFFF;
   }
+}
+.icon-button:hover, icon-button:focus {
+  background-color:#404BBF;
 }
 
 // Modal
