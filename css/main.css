@@ -817,6 +817,14 @@ label {
   margin-bottom: 8px;
 }
 
+.priority {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 72px;
+}
 .priority__text {
   font-weight: 500;
   font-size: 16px;
@@ -850,12 +858,10 @@ label {
 }
 @media screen and (min-width: 768px) {
   .priority {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 24px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    row-gap: 72px;
   }
 }
 @media screen and (min-width: 1158px) {
