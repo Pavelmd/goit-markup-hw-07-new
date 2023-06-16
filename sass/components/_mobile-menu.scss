@@ -42,7 +42,8 @@
   background-color: #ffffff;
   
   z-index: 999;
-  overflow-y: scroll;
+  // overflow-y: scroll;
+  overflow: auto;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -107,9 +108,10 @@
     color:$accent-color;
   }
 }
-// .mobile-contacts {
-//   margin-bottom: auto;
-// }
+ .block-bottom {
+  display: block;
+  margin-top: 50px;
+ }
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 40px;
 }
